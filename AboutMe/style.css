@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(black, green);
+}
+
+#navbar{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 200px 0 200px;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+#text-img{
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem;
+    font-size: 20px;
+}
+#ola{
+    font-size: 80px;
+    font-family:  'Lobster', sans-serif;
+}
+
