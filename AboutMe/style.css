@@ -1,36 +1,162 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    color: white;
-    background-image: linear-gradient(black, green);
+html {
+  scroll-behavior: smooth;
 }
 
-#navbar{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 20px 200px 0 200px;
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
+body {
+  margin-top: 300px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 242, 222, 0.863)
 }
 
-#text-img{
-    display: flex;
-    justify-content: space-around;
-    margin: 5rem;
-    font-size: 20px;
-}
-#ola{
-    font-size: 80px;
-    font-family:  'Lobster', sans-serif;
+#navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  background-color: rgba(252, 228, 192, 0.973);
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+li {
+  margin: 0 20px;
+}
+
+#container {
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#ola {
+  font-size: 80px;
+  font-family: 'Lobster', sans-serif;
+}
+
+#eu {
+  width: 250px;
+  height: 250px;
+  border-style: groove;
+  border-radius: 50%;
+}
+
+#resumo {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.skill {
+  font-size: 30px;
+  margin: 0 20px;
+}
+
+/* From Uiverse.io by PauloRFJ */
+.card {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 40px;
+  height: 50px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 1.2s;
+  border-radius: 15px 0 15px 0px;
+}
+
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 1.2s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 1.2s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 1.2s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #f90101;
+  transition-duration: 1.2s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 1.2s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 1.2s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
